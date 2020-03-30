@@ -35,7 +35,6 @@ public class FiBonacci {
 			int1 = int2;
 			int2 = int3;
 		}
-
 	}
 
 	public void printIntArray(int[] int3) {
@@ -43,10 +42,10 @@ public class FiBonacci {
 		boolean numberStarted = false;
 		for (int i = 0; i < int3.length; i++) {
 			if (numberStarted == false && int3[i] == 0) {
-			} else {
-				numberStarted = true;
-				System.out.print(int3[i]);
+				continue;
 			}
+			numberStarted = true;
+			System.out.print(int3[i]);
 		}
 	}
 
