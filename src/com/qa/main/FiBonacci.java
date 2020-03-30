@@ -3,7 +3,6 @@ package com.qa.main;
 public class FiBonacci {
 
 	public void fiBonacci(String limit) {
-
 		StringArithmetics stringArithmetics = new StringArithmetics();
 		int length = limit.length() + 1;
 

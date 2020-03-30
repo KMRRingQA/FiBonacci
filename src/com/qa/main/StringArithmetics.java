@@ -33,11 +33,11 @@ public class StringArithmetics {
 	}
 
 	public boolean smallerEqualLimit(int[] tempSum, String limit) {
-		int[] limitString = this.stringToIntArray(limit);
+		int[] limitIntArray = this.stringToIntArray(limit);
 		for (int i = 0; i < tempSum.length; i++) {
-			if (tempSum[i] > limitString[i]) {
+			if (tempSum[i] > limitIntArray[i]) {
 				return false;
-			} else if (tempSum[i] < limitString[i]) {
+			} else if (tempSum[i] < limitIntArray[i]) {
 				return true;
 			}
 		}
@@ -45,10 +45,10 @@ public class StringArithmetics {
 	}
 
 	public int[] stringToIntArray(String limit) {
-		int[] limitString = new int[limit.length() + 1];
+		int[] limitIntArray = new int[limit.length() + 1];
 		for (int i = 1; i <= limit.length(); i++) {
-			limitString[i] = Integer.parseInt(limit.substring(i - 1, i));
+			limitIntArray[i] = Integer.parseInt(limit.substring(i - 1, i));
 		}
-		return limitString;
+		return limitIntArray;
 	}
 }
