@@ -17,5 +17,4 @@ public class FiBonacci {
 			int2 = int3;
 		}
 	}
-
 }
